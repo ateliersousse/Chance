@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Best Deals from Amazon & Alibaba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Shop<span>Easy</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#affiliate">Become Affiliate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Best Products</h2>
+            <p>From Amazon & Alibaba at the best prices</p>
+            <a href="#products" class="btn">Shop Now</a>
+            
+            <!-- Affiliate Login for Partners -->
+            <div class="affiliate-login">
+                <a href="affiliate.php?action=login" class="btn btn-outline">Affiliate Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="amazon">Amazon</button>
+                <button class="filter-btn" data-filter="alibaba">Alibaba</button>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products loaded via PHP/JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Program Section -->
+    <section id="affiliate" class="affiliate-section">
+        <div class="container">
+            <h2>Join Our Affiliate Program</h2>
+            <p>Earn 20% commission on every sale you refer</p>
+            <div class="affiliate-benefits">
+                <div class="benefit-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>High Commissions</h3>
+                    <p>Earn up to 20% per sale</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-time Tracking</h3>
+                    <p>Track clicks and earnings in real-time</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Fast Payouts</h3>
+                    <p>Get paid via PayPal or Bank Transfer</p>
+                </div>
+            </div>
+            <a href="affiliate.php?action=register" class="btn">Become an Affiliate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEasy</h3>
+                    <p>Your trusted source for Amazon & Alibaba products</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
